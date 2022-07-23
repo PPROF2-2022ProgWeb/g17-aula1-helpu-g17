@@ -1,0 +1,458 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+*::selection {
+    background: #CF372D;
+    color: #fff;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    
+    position: relative;
+    padding-bottom: 0.1px;
+}
+
+
+/*Estilos del Header*/
+nav{
+    background: #18191F;
+    height: 80px;
+    width: 100%;
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo{
+    height: 40px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 7px 13px;
+    border-radius: 3px;
+    opacity: 0.8;
+}
+
+li a.active, li a:hover{
+    opacity: 1;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 3rem;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/*Estilos del contenido principal del index(Titulo, parrafo e imagen del smartphone)*/
+
+.content {
+    width: 100%;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.box-uno {
+    width: 50%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-uno h1 {
+    font-weight: 800;
+    line-height: 9.8rem;
+    font-size: 5.5rem;
+}
+
+.box-uno p {
+    font-weight: 400;
+    line-height: 32px;
+    font-size: 1.8rem;
+}
+
+.box-uno h1, .box-uno p {
+    margin-bottom: 20px;
+    color: #18191F;
+    max-width: 63%;
+}
+
+.box-dos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-imagen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.box-circular {
+    border-radius: 100%;
+    height: 400px;
+    width: 400px;
+    background-color: #CF372D;
+    overflow: hidden;
+}
+
+.box-circular img {
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+/*Estilos de los pasos a seguir del index*/
+
+.instrucciones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-instrucciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    color: #18191F;
+    padding-top: 50px;
+}
+
+.titulo-instrucciones {
+    color: #CF372D;
+    font-size: 3rem;
+}
+
+.box-paso {
+    margin-right: 20px;
+    width: 20%;
+}
+
+.box-paso h4 {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 20px;
+}
+
+.box-paso p {
+    font-size: 1.5rem;
+    line-height: 2.6rem
+}
+
+
+/*Estilos del footer*/
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    padding: 30px 30px;
+    background-color: #18191F;
+    color: #fff;
+}
+
+
+/*Estilos de los formularios*/
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 250px;
+}
+
+.box-form {
+    margin-top: 100px;
+    color: #18191F;
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-form form {
+    max-width: 85%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 25px 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.img-form {
+    width: 50px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.img-form img {
+    width: 100%;
+}
+
+.titulo-form {
+    color: #CF372D;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="number"], textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #18191F;
+    border-bottom: 1px solid rgb(145, 141, 141);
+}
+
+textarea {
+    font-family: 'Inter', sans-serif;
+    resize: none;
+}
+
+textarea::placeholder, input::placeholder {
+    color: #18191F;
+    opacity: 0.8;
+}
+
+.boton-enviar {
+    align-self: center;
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #CF372D;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    opacity: 0.8;
+    cursor: pointer;
+    padding: 0px 10px;
+}
+
+input[type="submit"]:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+
+/*Estilos de los servicios*/
+
+.contenedor-servicios {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contenedor-servicios h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.box-servicio  {
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    width: 25%;
+    max-width: 350px;
+}
+
+.card-servicio {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 35px;
+    color: #CF372D;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    line-height: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.servicio-recomendado {
+    background-color: #CF372D;
+    color: #fff;
+}
+
+
+
+.card-servicio h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.card-servicio h5 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.card-servicio p {
+    font-size: 12px;
+    font-weight: 500;
+    justify-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.card-servicio p:last-of-type {
+    margin-bottom: 40px;
+}
+
+.btn-servicio {
+    position: absolute;
+    background-color: #CF372D;
+    color: #fff;
+    bottom: 30px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: fit-content;
+    align-self: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.btn-servicio-recomendado {
+    background-color: #fff;
+    color: #CF372D;
+}
+
+/*Estilos responsive*/
+
+@media (max-width: 1024px){
+    
+    html {
+        font-size: 50%;
+    }
+    .enlace{
+        padding-left: 20px;
+    }
+    .box-circular {
+        height: 300px;
+        width: 300px;
+    }
+    .contenedor-servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-servicio {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px){
+    
+    html {
+        font-size: 40%;
+    }
+    .box-uno {
+        width: 100%;
+    }
+
+    .box-dos {
+        display: none;
+    }
+
+    .instrucciones {
+        flex-direction: column;
+    }
+
+    .box-paso {
+        width: 60%;
+        margin-bottom: 30px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        z-index: 3;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #18191F;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #fff;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>helpU - Registrate</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="./index.html" class="enlace">
+                <img src="./assets/img/logo.png" alt="" class="logo">
+            </a>
+            <ul>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./login.html">Iniciar sesión</a></li>
+                <li><a href="./registro.html">Registrate</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenedor">
+        <div class="box-form">
+            <form action="" method="">
+                <div class="img-form">
+                    <img src="./assets/img/form-img3.png" alt="icon">
+                </div>
+                <div class="titulo-form">
+                    <h4>Registrate</h4>
+                </div>
+                <div class="nombre">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="apellido">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                </div>
+                <div class="documento">
+                    <label for="documento">DNI</label>
+                    <input type="number" name="documento" id="documento" placeholder="Nro. de Documento" required>
+                </div>
+                <div class="provincia">
+                    <label for="provincia">Provincia</label>
+                    <input type="text" name="provincia" id="provincia" placeholder="Provincia" required>
+                </div>
+                <div class="ciudad">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad" required>
+                </div>
+                <div class="direccion">
+                    <label for="ciudad">Direccion</label>
+                    <input type="text" name="direccion" id="direccion" placeholder="Calle y numero" required>
+                </div>
+                <div class="celular">
+                    <label for="celular">Celular</label>
+                    <input type="number" name="celular" id="celular" placeholder="Nro. de Celular" required>
+                </div>
+                <div class="correo">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Correo electronico" required>
+                </div>
+                <div class="nombre-usuario">
+                    <label for="nombre-usuario">Nombre de usuario</label>
+                    <input type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Crear nombre de usuario" required>
+                </div>
+                <div class="password">
+                    <label for="pwd">Contraseña</label>
+                    <input type="password" name="pwd" id="pwd" placeholder="Crear contraseña" required>
+                </div>
+                <div class="boton-enviar">
+                    <input type="submit" value="Registrate">
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="copyright">
+            <p>©helpU - Todos los derechos reservados 2022</p>
+        </div>
+    </footer>
+</body>
+</html>
