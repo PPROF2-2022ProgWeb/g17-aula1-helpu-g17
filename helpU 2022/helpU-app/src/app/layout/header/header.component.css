@@ -93,6 +93,6 @@ li a.active, li a:hover{
       color: #fff;
   }
   #check:checked ~ ul{
-      left:0;
+      left: 0;
   }
 }

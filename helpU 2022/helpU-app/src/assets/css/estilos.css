@@ -15,12 +15,12 @@
 
 html {
     font-size: 62.5%;
+    position: relative;
+    min-height: 100vh;
 }
 
 body {
     font-family: 'Inter', sans-serif;
-    min-height: 100vh;
-    position: relative;
 }
 
 @media (max-width: 1024px){

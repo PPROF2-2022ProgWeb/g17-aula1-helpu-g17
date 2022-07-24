@@ -5,6 +5,9 @@ import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { ServiciosComponent } from './servicios/servicios.component';
+import { Pagina404Component } from './pagina404/pagina404.component';
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -12,17 +15,20 @@ import { ServiciosComponent } from './servicios/servicios.component';
     LoginComponent,
     RegistroComponent,
     ContactoComponent,
-    ServiciosComponent
+    ServiciosComponent,
+    Pagina404Component
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     HomeComponent,
     LoginComponent,
     RegistroComponent,
     ContactoComponent,
-    ServiciosComponent
+    ServiciosComponent,
+    Pagina404Component
   ]
 })
 export class PagesModule { }
